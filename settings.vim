@@ -148,6 +148,15 @@ lua << EOF
     on_attach = on_attach,
   })
 
+  -- LSP Signature
+
+  require('lsp_signature').setup({
+    hind_enable = false,
+    handler_options = {
+      border = 'single'
+    }
+  })
+
   -- NVIM CMP
 
   local cmp = require'cmp'

@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'neovim/nvim-lspconfig'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+Plug 'ray-x/lsp_signature.nvim'
 
 " Git
 Plug 'tpope/vim-fugitive'
