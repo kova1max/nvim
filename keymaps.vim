@@ -18,9 +18,6 @@ vnoremap <S-Tab> <gv
 " Commentaries
 vnoremap / <Plug>Commentary
 
-" Float Terminal
-let g:floaterm_keymap_toggle = '`'
-
 " Nvim Compe using lexima
 let g:lexima_no_default_rules = v:true
 call lexima#set_default_rules()

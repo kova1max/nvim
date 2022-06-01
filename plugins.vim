@@ -57,9 +57,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'nvim-lua/plenary.nvim'
 
-" Float terminal
-Plug 'voldikss/vim-floaterm'
-
 " Pop-up
 Plug 'nvim-lua/popup.nvim'
 Plug 'Ajnasz/vim-popup-menu'
