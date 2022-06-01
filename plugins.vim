@@ -20,7 +20,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " Color theme
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'ayu-theme/ayu-vim'
 
 " Colors highlight
 Plug 'norcalli/nvim-colorizer.lua'

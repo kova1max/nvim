@@ -1,5 +1,4 @@
 filetype plugin indent on
-colorscheme onehalfdark
 highlight link CompeDocumentation NormalFloat
 
 set number
@@ -7,6 +6,7 @@ set autoindent
 set smarttab
 set noswapfile
 set expandtab
+set termguicolors
 set cursorline
 set lazyredraw
 set nowrap
@@ -29,6 +29,10 @@ set softtabstop=2
 set shiftwidth=2
 set scrolloff=14
 set colorcolumn=120
+
+" Theme
+let ayucolor="mirage"
+colorscheme ayu
 
 let g:floaterm_position='top'
 
@@ -94,6 +98,12 @@ lua << EOF
       icons = {
        webdev_colors = true,
        git_placement = "after",
+       show = {
+         file = true,
+         folder = false,
+         folder_arrow = true,
+         git = true,
+         },
       },
     },
     update_focused_file = {
