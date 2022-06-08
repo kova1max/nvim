@@ -1,10 +1,5 @@
 filetype plugin indent on
 highlight link CompeDocumentation NormalFloat
-highlight link GitGutterChangeLine DiffText
-
-highlight GitGutterAdd    guifg=#009900 ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 set number
 set autoindent
@@ -51,6 +46,9 @@ endif
 
 lua << EOF
 
+  -- Lua line
+  require('lualine').setup()
+
   -- Nvim Tree
   require('nvim-tree').setup{
     open_on_setup = true,
@@ -62,14 +60,14 @@ lua << EOF
     },
     renderer = {
       icons = {
-       webdev_colors = true,
-       git_placement = "after",
-       show = {
-         file = true,
-         folder = false,
-         folder_arrow = true,
-         git = true,
-         },
+        webdev_colors = true,
+        git_placement = "after",
+        show = {
+          file = true,
+          folder = false,
+          folder_arrow = true,
+          git = true,
+        },
       },
     },
     update_focused_file = {
