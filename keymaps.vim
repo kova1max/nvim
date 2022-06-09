@@ -5,14 +5,22 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Basic
 nnoremap <silent> ,, :nohlsearch<cr>
+nnoremap <C-h> <cmd>History<cr>
 
 " Find Files
 nnoremap <C-f>f <cmd>Files<cr>
 nnoremap <C-f>r <cmd>Rg<cr>
 
+" Git
+nnoremap <C-g>c <cmd>BCommits<cr>
+nnoremap <C-g>ac <cmd>Commits<cr>
+nnoremap <C-g>d <cmd>Gdiffsplit<cr>
+
 " Tab with selection
 vnoremap > >gv
 vnoremap < <gv
+
+nnoremap <C-d> Y<Esc>p
 
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
@@ -24,10 +32,10 @@ vnoremap <S-Tab> <gv
 vnoremap / <Plug>Commentary
 
 " GoTo code navigation.
-nmap <silent> gd :vsp<CR><Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gd <Plug>(coc-definition)<CR>
+nmap <silent> gy :vsp<Plug>(coc-type-definition)<CR>
+nmap <silent> gi <Plug>(coc-implementation)<CR>
+nmap <silent> gr <Plug>(coc-references)<CR>
 
 " Eslint fix problems
 nmap <silent> <M-f> :CocCommand eslint.executeAutofix<CR>
@@ -49,17 +57,6 @@ nmap <silent><M-r> <Plug>(coc-rename)
 
 " Remap keys for applying codeAction to the current buffer.
 nmap <silent><M-a>  <Plug>(coc-codeaction)
-
-" Map function and class text objects
-" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-omap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap ic <Plug>(coc-classobj-i)
-omap ic <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
