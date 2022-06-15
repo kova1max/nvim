@@ -32,10 +32,10 @@ vnoremap <S-Tab> <gv
 vnoremap / <Plug>Commentary
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)<CR>
-nmap <silent> gy :vsp<Plug>(coc-type-definition)<CR>
-nmap <silent> gi <Plug>(coc-implementation)<CR>
-nmap <silent> gr <Plug>(coc-references)<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy :vsp<Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " Eslint fix problems
 nmap <silent> <M-f> :CocCommand eslint.executeAutofix<CR>
